@@ -50,9 +50,6 @@ export function ConversionForm() {
 					<StyledCard css={{p: '25px'}}>
 						<Grid>
 							<Text h3 css={{fontSize: '45px', font: ''}}>YouTube to MP3 Converter</Text>
-							<Text>Convert a YouTube URL to a MP3 file</Text>
-						</Grid>
-						<Grid>
 							<Input
 								ref={inputUrlRef}
 								css={{
