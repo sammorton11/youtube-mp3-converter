@@ -1,4 +1,4 @@
-import {Grid, Button, Text, Input, StyledCard, Link} from "@nextui-org/react";
+import {Grid, Button, Text, Input, StyledCard} from "@nextui-org/react";
 import axios, {AxiosRequestConfig} from "axios";
 import {useRef, useState} from "react";
 
@@ -64,16 +64,7 @@ export function ConversionForm() {
 						<Grid>
 							{urlResult !== "" && (
 								<StyledCard css={{backgroundColor: 'blanchedalmond', padding: '15px'}}>
-									<Link
-										isExternal
-										underline
-										to={urlResult}
-										target="_blank"
-										color = "azure"
-										rel="noopener noreferrer">
-										{title}
-									</Link>
-									<a href={urlResult} target="_blank" color = "azure" rel="noopener noreferrer">{title}</a>
+									<a href={urlResult} target="_blank" color = "blue" rel="noopener noreferrer">{title}</a>
 								</StyledCard>
 							)}
 						</Grid>
