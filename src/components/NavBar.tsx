@@ -6,10 +6,9 @@ export class NavBar extends Component {
 		return (
 			<Navbar
 				css={{
-					background: 'lightslategrey'
 				}}
 				isBordered
-				variant="floating"
+
 			>
 				<Navbar.Brand>
 					<Text b color="inherit" hideIn="xs">
