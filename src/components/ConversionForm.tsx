@@ -42,7 +42,14 @@ export function ConversionForm() {
 	return (
 		<Grid.Container gap={2} justify="center" css={{margin: '15px'}}>
 			<Grid>
-				<StyledCard css={{p: '25px', backgroundColor: '#c1e9f4'}} isBlurred>
+				<StyledCard 
+					css={{
+						p: '25px', 
+						backgroundColor: '#C0C6CB',
+						boxShadow: '8px 12px 15px rgba(0, 0, 0, 0.2)',	
+					}} 
+					isBlurred
+				>
 					<Grid>
 						<Text h3 css={{fontSize: '30px', color: '#333333'}}>YouTube to MP3 Converter</Text>
 						<Input
@@ -56,12 +63,12 @@ export function ConversionForm() {
 					</Grid>
 					<Grid>
 						{urlResult !== "" && (
-						<StyledCard css={{backgroundColor: 'inherit', padding: '15px'}}>
+						<StyledCard css={{backgroundColor: 'lightblue', padding: '15px'}}>
 							<Text>Download MP3:</Text>
 							<a 
 								href={urlResult} 
 								target="_blank" 
-								color = "blue" 
+								color = "black" 
 								rel="noopener noreferrer">
 								{title}
 							</a>
